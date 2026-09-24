@@ -1,0 +1,6 @@
+{
+  "name": "Divine Bakers | Bakery & Sweets Lahore",
+  "description": "Divine Bakers offers quality bakery products, cakes and sweets made with pure ingredients in Lahore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

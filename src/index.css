@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-burgundy: #5A0F1B;
+    --color-burgundy-deep: #440A13;
+    --color-burgundy-rich: #6D1422;
+    --color-burgundy-light: #7E1A29;
+    --color-cream: #FAF7F2;
+    --color-cream-warm: #F4EFE6;
+    --color-ivory: #ECE4D6;
+    --color-gold: #C5A059;
+    --color-gold-light: #DFC285;
+    --color-charcoal: #1C1917;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #FAF7F2;
+    color: #1C1917;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@keyframes floatSubtle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes floatDessert {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.01);
+  }
+}
+
+@keyframes pulseGold {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.05);
+  }
+}
+
+.animate-float-subtle {
+  animation: floatSubtle 6s ease-in-out infinite;
+}
+
+.animate-float-dessert {
+  animation: floatDessert 8s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 4s ease-in-out infinite;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-subtle,
+  .animate-float-dessert,
+  .animate-pulse-gold {
+    animation: none !important;
+  }
+}
